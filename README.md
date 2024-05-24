@@ -1,6 +1,6 @@
-# Aplicação de Treinamento de AI De "Reforcement Learning" - *Alex Kidd In Miracle World*
+# Aplicação de Treinamento de AI De "Reforcement Learning" - *MegaMan NES*
 
-![MarineGEO circle logo](https://i.ytimg.com/vi/Rb9haoWT5js/hqdefault.jpg)
+
 
 
 

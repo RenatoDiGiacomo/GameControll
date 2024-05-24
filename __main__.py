@@ -1,33 +1,27 @@
-from nes import NES
+import subprocess
+import time
+import keyboard
+
 import pygame
 import pydirectinput
-import time
 
-pygame.init()
 
-nes_instance = NES("MegaMan.nes",screen_scale=1)
+subprocess.call(['D:\Renato\Estudo\AI\GameControll\Game\Mesen\\Mesen.exe'])
 
-'''
-Up, Left, Down, Right: W, A, S, D
-Select, Start:  G, H
-A, B: P, L
-'''
 
-print(nes_instance.run())
-# nes_instance.run()
+# '''
+# Up, Left, Down, Right: W, A, S, D
+# Select, Start:  U,I
+# A, B: J,L
+# Turbo: N,M
+# '''
 
-while True:    
+debounce = True
+
+while debounce:
     time.sleep(1)
-    pydirectinput.press("H")
-    pydirectinput.press("P")
-    pydirectinput.press("L")
+    print("m")
+    pydirectinput.keyDown("m")
     
-
-
-
-
-
-
-
-
-    
+    if keyboard.is_pressed('q'):
+        debounce = False
