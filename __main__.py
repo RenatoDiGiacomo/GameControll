@@ -1,12 +1,11 @@
-import subprocess
 import time
 import keyboard
+import sys
+
+from app.MesenRun import mazenRunning
 
 import pygame
 import pydirectinput
-
-
-subprocess.call(['D:\Renato\Estudo\AI\GameControll\Game\Mesen\\Mesen.exe'])
 
 
 # '''
@@ -16,12 +15,5 @@ subprocess.call(['D:\Renato\Estudo\AI\GameControll\Game\Mesen\\Mesen.exe'])
 # Turbo: N,M
 # '''
 
-debounce = True
 
-while debounce:
-    time.sleep(1)
-    print("m")
-    pydirectinput.keyDown("m")
-    
-    if keyboard.is_pressed('q'):
-        debounce = False
+mazenRunning()
