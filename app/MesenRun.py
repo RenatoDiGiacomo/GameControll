@@ -1,6 +1,6 @@
 from os import system
 import subprocess
-
+from app.inputData import inputData
 
 
 def is_mesen_running():
@@ -22,6 +22,7 @@ def mazenRunning():
         while MesenRunning:
             if is_mesen_running():
                 print("Running")
+                inputData()
             else:
                 print("Mazen Closed")
                 MesenRunning = False
